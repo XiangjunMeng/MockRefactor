@@ -129,8 +129,8 @@ public class DataContextDataChannelEventsIT extends ServerCaseContextsSync {
                 assertTrue(listener.graphChanged);
                 assertFalse(listener.graphRolledBack); */
             	verify(listener, never()).graphFlushed(any());
-				verify(listener, times(1)).graphChanged(any());
-				verify(listener, never()).graphRolledback(any());
+		verify(listener, times(1)).graphChanged(any());
+		verify(listener, never()).graphRolledback(any());
             }
         }.runTest(10000);
     }
@@ -158,8 +158,8 @@ public class DataContextDataChannelEventsIT extends ServerCaseContextsSync {
                 assertTrue(listener.graphChanged);
                 assertFalse(listener.graphRolledBack); */
             	verify(listener, never()).graphFlushed(any());
-				verify(listener, times(1)).graphChanged(any());
-				verify(listener, never()).graphRolledback(any());
+		verify(listener, times(1)).graphChanged(any());
+		verify(listener, never()).graphRolledback(any());
             }
         }.runTest(10000);
     }
