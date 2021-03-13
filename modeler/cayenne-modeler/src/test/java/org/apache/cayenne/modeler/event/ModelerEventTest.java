@@ -42,8 +42,8 @@ public class ModelerEventTest {
 	@Test
     public void testId() throws Exception  {
     //	MapEvent e = new TestMapEvent(new Object());
-		MapEvent e = mock(MapEvent.class);
-		when(e.getId()).thenReturn(MapEvent.CHANGE);
+	MapEvent e = mock(MapEvent.class);
+	when(e.getId()).thenReturn(MapEvent.CHANGE);
     	assertEquals(MapEvent.CHANGE, e.getId());
     	
     	e.setId(MapEvent.ADD);
